@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PageBee – Nhà dịch truyện của Chan</title>
+<meta name="description" content="PageBee – nhà nhỏ của những bộ truyện dịch do Trang (Chan) thực hiện.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐝</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&text=信帝花书蜂" rel="stylesheet">
+<style>
+:root{--bg:#fdf6fb;--ink:#3d3552;--mut:#8b829d;--line:#f3e4ef;--ac:#d6457a;--btn:#ffb8d2;--r:20px;--rb:#fff;--rt:#3d3552;--fs:19px;--lh:1.95}
+*{box-sizing:border-box}
+body{margin:0;background-color:var(--bg);background-image:radial-gradient(#f3d7e8 1.2px,transparent 1.4px);background-size:22px 22px;color:var(--ink);font:16px/1.6 "Google Sans","Product Sans","Be Vietnam Pro","PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+a{color:inherit}button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+[hidden]{display:none!important}
+.wrap{max-width:1060px;margin:0 auto;padding:16px 18px 40px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px 14px;flex-wrap:wrap;background:#fff;border:2px solid var(--line);border-radius:26px;padding:9px 12px 9px 20px;margin-bottom:22px}
+.logo{display:flex;gap:9px;align-items:center;font-weight:700;font-size:20px;text-decoration:none}
+.top nav{display:flex;gap:4px;overflow-x:auto;max-width:100%}
+.top nav a{padding:8px 16px;border-radius:999px;text-decoration:none;font-weight:500;white-space:nowrap;color:var(--mut)}
+.top nav a:hover{background:#fff0f6;color:var(--ink)}.top nav a.on{background:#ffe0ec;color:var(--ink);font-weight:600}
+.lay{display:grid;grid-template-columns:270px 1fr;gap:22px;align-items:start}
+.side{position:sticky;top:18px}
+.card{background:#fff;border:2px solid var(--line);border-radius:var(--r);padding:18px 20px;margin-bottom:16px;position:relative}
+.tape::before{content:"";position:absolute;top:-11px;left:50%;width:86px;height:22px;transform:translateX(-50%) rotate(-3deg);background:repeating-linear-gradient(45deg,#ffd3e4 0 8px,#fff3bf 8px 16px);border-radius:4px;opacity:.95}
+.pf{text-align:center;padding:30px 18px 20px}
+.av{width:96px;height:96px;border-radius:50%;border:4px solid #ffe0ec;object-fit:cover;display:grid;place-items:center;font-size:44px;background:#fff3bf;margin:0 auto 10px}
+.pf h3{margin:0;font-size:22px}.pf .zh{font-size:13px;color:var(--mut);margin:4px 0 10px;font-family:"Noto Serif SC","Songti SC",serif}
+.pf p{margin:0 0 12px;font-size:14.5px;color:#5d5472}
+.stat{display:flex;justify-content:center;gap:8px;margin-bottom:14px;flex-wrap:wrap}.stat span{background:#f6f0ff;border-radius:999px;padding:2px 12px;font-size:13px;font-weight:600}
+.btns{display:flex;gap:8px;flex-wrap:wrap}.pf .btns{justify-content:center}
+.btn{display:inline-block;border:0;border-radius:14px;padding:9px 18px;font-weight:600;cursor:pointer;text-decoration:none;background:var(--btn);color:var(--ink);transition:transform .12s}
+.btn:hover{transform:translateY(-1px);filter:brightness(.97)}.btn.w{background:#fff;border:2px solid var(--line)}.btn.sm{padding:4px 12px;font-size:14px;border-radius:10px}.btn.on{background:var(--ink);color:#fff}
+.since{margin:14px 0 0;font-size:13px;color:var(--mut)}
+h1{font-size:28px;line-height:1.3;margin:0 0 6px;letter-spacing:-.3px}h2{font-size:19px;margin:0}small{color:var(--mut)}
+.hl{background:linear-gradient(transparent 62%,#ffd3e4 62%);padding:0 3px}
+.sec{display:flex;justify-content:space-between;align-items:baseline;margin:26px 0 12px}.sec:first-child{margin-top:0}.sec a{font-size:14px;color:var(--mut);text-decoration:none}.sec a:hover{color:var(--ac)}
+.sub{color:var(--mut);margin:0 0 18px}.empty{color:var(--mut);padding:8px 0}
+.note{background:#fff3bf;border-radius:8px 8px 22px 8px;padding:20px 22px 16px;transform:rotate(-.5deg);box-shadow:3px 5px 0 rgba(120,90,0,.07);margin-bottom:8px;position:relative}
+.note h2{font-size:17px;margin-bottom:6px}.note p{margin:0 0 6px;font-size:15px}
+.chip{display:inline-block;padding:1px 11px;border-radius:999px;font-size:12.5px;font-weight:600;margin:0 6px 4px 0;background:#f6f0ff;color:#5b45b0}.chip.y{background:#fff3bf;color:#8a6a00}.chip.m{background:#d9f5e6;color:#2f7a52}.chip.s{background:#dbeeff;color:#2a6aa8}
+.cv{aspect-ratio:3/4;border-radius:14px;background:linear-gradient(150deg,var(--a),var(--b));color:var(--f);display:grid;place-items:center;overflow:hidden;position:relative}
+.cv i{font-style:normal;font-size:46px;font-weight:700;font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif}.cv.big i{font-size:84px}
+.cv::after{content:"";position:absolute;inset:6px;border:1.5px dashed rgba(255,255,255,.85);border-radius:10px}
+.sc{display:grid;grid-template-columns:100px 1fr;gap:16px;background:#fff;border:2px solid var(--line);border-radius:var(--r);padding:14px;margin-bottom:14px;text-decoration:none;transition:transform .15s,border-color .15s}
+.sc:hover{transform:translateY(-2px);border-color:#ffb8d2}.sc .t{font-size:17px;line-height:1.35;display:block;margin-bottom:4px}
+.ex{margin:4px 0 8px;font-size:14.5px;color:#5d5472;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pg{height:8px;border-radius:99px;background:#f1e8ff;overflow:hidden;margin:8px 0 4px}.pg i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#ff9ec1,#ffcf8a)}
+.po{display:block;text-decoration:none;background:#fff;border:2px solid var(--line);border-radius:var(--r);padding:16px 18px;margin-bottom:12px;transition:border-color .15s}.po:hover{border-color:#ffb8d2}
+.po .r{display:flex;justify-content:space-between;gap:10px;align-items:center}.po b{display:block;font-size:17px;margin:2px 0 4px}.po p{margin:0;color:#5d5472;font-size:14.5px}
+.dr .po{cursor:default}.dr .po:hover{border-color:var(--line)}.dr p{margin:0 0 .8em;font-size:15.5px;color:var(--ink)}
+.fl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;align-items:center}.fl input{flex:1 1 180px;max-width:260px}
+.sh{display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:start}
+.cr{display:grid;grid-template-columns:34px 1fr auto;gap:8px;padding:10px 4px;border-bottom:1.5px dashed var(--line);text-decoration:none}.cr:hover{color:var(--ac)}.cr.rd{color:var(--mut)}.cr b{color:var(--mut);font-weight:500}.cr span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.back{margin:0 0 12px}.back a{color:var(--mut);text-decoration:none}
+.about li{list-style:none;padding:9px 14px;border-radius:12px;margin-bottom:8px}.about ul{padding:0;margin:0}.about li:nth-child(4n+1){background:#fff3bf}.about li:nth-child(4n+2){background:#ffe5ef}.about li:nth-child(4n+3){background:#d9f5e6}.about li:nth-child(4n){background:#ebe3ff}
+.foot{text-align:center;color:var(--mut);font-size:14px;margin-top:34px}.foot a{color:var(--mut)}
+/* trình đọc */
+body.rd{background-image:none;background-color:var(--rb);color:var(--rt)}body.rd .top,body.rd .foot{display:none}body.rd .wrap{max-width:none;padding:0}
+.rprog{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,#ff9ec1,#ffcf8a);z-index:30;width:0;border-radius:0 4px 4px 0}
+.rbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--rb) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.rbar .in{max-width:760px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;gap:10px}.rbar .ti{flex:1;min-width:0;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.35}
+.rb{border:0;background:color-mix(in srgb,var(--rt) 9%,transparent);color:var(--rt);border-radius:12px;padding:7px 13px;cursor:pointer;font-weight:600;text-decoration:none;white-space:nowrap}.rb:hover{background:color-mix(in srgb,var(--rt) 17%,transparent)}.rb.on{background:var(--rt);color:var(--rb)}.rb[disabled]{opacity:.35;pointer-events:none}
+.art{max-width:700px;margin:0 auto;padding:18px 20px 140px;font-size:var(--fs);line-height:var(--lh)}.art h1{text-align:center;font-size:1.45em;margin:26px 0 34px}.art p{margin:0 0 1.2em}
+.dn{margin-top:36px;padding:16px 20px;border-radius:8px 8px 22px 8px;background:#fff3bf;color:#3b3224;font-size:.88em;line-height:1.7}.dn b{display:block;margin-bottom:4px}
+.rfoot{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);display:flex;gap:6px;align-items:center;padding:6px;border-radius:999px;background:color-mix(in srgb,var(--rb) 92%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 6px 26px rgba(40,30,60,.2);z-index:20}.rfoot .rb{border-radius:999px}.rfoot small{padding:0 8px;color:var(--rt);opacity:.7}
+.pop,.drw{position:fixed;background:var(--rb);color:var(--rt);border-radius:22px;box-shadow:0 10px 40px rgba(40,30,60,.28);z-index:40;display:none}.pop.open,.drw.open{display:block}
+.pop{top:58px;right:max(14px,calc(50vw - 366px));width:min(320px,calc(100vw - 28px));padding:16px}.pop h3{margin:12px 0 6px;font-size:13px;opacity:.65;font-weight:600}.pop h3:first-child{margin-top:0}.pop .rw{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.sw{width:32px;height:32px;border-radius:50%;border:2px solid rgba(0,0,0,.12);cursor:pointer;padding:0}.sw.on{outline:3px solid var(--ac);outline-offset:2px}
+.drw{top:12px;bottom:12px;right:12px;width:min(340px,calc(100vw - 24px));overflow:auto;padding:14px}.drw h3{margin:4px 8px 8px}.drw a{display:block;padding:9px 12px;border-radius:12px;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.drw a:hover{background:color-mix(in srgb,var(--rt) 9%,transparent)}.drw a.cur{background:var(--rt);color:var(--rb);font-weight:600}
+.ov{position:fixed;inset:0;background:rgba(40,25,50,.28);z-index:35;display:none}.ov.open{display:block}
+/* quản lý */
+.tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+.adm{display:grid;grid-template-columns:240px 1fr;gap:18px;align-items:start}.adm aside{display:flex;flex-direction:column;gap:6px}
+.li{border:0;background:#fff0f6;border-radius:12px;padding:9px 12px;text-align:left;cursor:pointer}.li:hover{background:#ffe0ec}.li.on{background:var(--ink);color:#fff}
+label{display:block;font-size:13px;font-weight:600;color:var(--mut);margin:12px 0 5px}
+input[type=text],input[type=date],select,textarea{width:100%;border:2px solid var(--line);background:#fff;border-radius:12px;padding:9px 13px}
+textarea{min-height:100px;resize:vertical}input:focus,select:focus,textarea:focus{outline:none;border-color:#ffb8d2}
+.crow{display:flex;gap:8px;align-items:center;padding:6px 0;border-top:1.5px dashed var(--line)}.crow span{flex:1;min-width:0}.swr{display:flex;gap:8px;margin-top:4px}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:14px;z-index:60}
+@media (max-width:820px){.lay,.adm{grid-template-columns:1fr}.side{position:static}.pf .more{display:none}.wrap{padding:12px 12px 30px}.top{padding:8px 10px 8px 16px}h1{font-size:24px}
+.sh{grid-template-columns:1fr;justify-items:center;text-align:center}.sh .cv{width:150px}.sh .btns{justify-content:center}.sc{grid-template-columns:84px 1fr;gap:12px}.pop{right:14px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a class="logo" href="#home">🐝 PageBee</a>
+<nav aria-label="Menu chính"><a href="#home" data-r="home">Trang chủ</a><a href="#doing" data-r="doing">Truyện đang dịch</a><a href="#done" data-r="done">Truyện đã hoàn thành</a><a href="#diary" data-r="diary">Nhật ký</a><a href="#about" data-r="about">Về mình</a></nav></header>
+<div id="app"></div>
+<footer class="foot">© 2025 PageBee · Truyện dịch chưa có sự cho phép của tác giả, vui lòng không reup · <a href="#admin">Quản lý</a></footer>
+</div>
+<script src="truyen.js"></script>
+<script>
+const $=id=>document.getElementById(id),esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const COL=[['#ffe0ec','#fff0f6','#b03a68'],['#fff3bf','#fffbe3','#8a6a00'],['#d9f5e6','#effbf5','#2f7a52'],['#dbeeff','#eef7ff','#2a6aa8'],['#ebe3ff','#f6f1ff','#5b45b0'],['#ffe5d6','#fff3ec','#a8532a']];
+const TH=[['#ffffff','#3d3552'],['#fff6d9','#3b3224'],['#e9f5e3','#25382a'],['#ffeef3','#4a2733'],['#1f1c2b','#d8d5ea']],ST={doing:['Đang dịch 🍯','y'],done:['Đã hoàn 🐝','m'],hold:['Tạm nghỉ 💤','s']};
+const base=window.PB_DATA||{site:{},stories:[],posts:[]};
+let DB=base;try{const d=localStorage.getItem('pb.draft');if(d)DB=JSON.parse(d)}catch(e){}
+DB.posts=DB.posts||[];DB.site=DB.site||{};DB.site.bio=DB.site.bio||[];DB.site.notice=DB.site.notice||[];
+const ld=(k,d)=>{try{return Object.assign(d,JSON.parse(localStorage.getItem(k)||'{}'))}catch(e){return d}};
+let PREF=ld('pb.pref',{fs:19,lh:1.95,th:0}),PROG=ld('pb.prog',{}),ui={pop:false,toc:false,rev:false,f:'all',q:''},adm={tab:'st',sid:null,cid:null,pid:null};
+const sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},saveDB=()=>sv('pb.draft',DB);
+const find=id=>DB.stories.find(s=>s.id===id),fmt=d=>String(d||'').split('-').reverse().join('/');
+const slug=t=>t.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[đĐ]/g,'d').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,36)+'-'+Math.random().toString(36).slice(2,5),uid=()=>Math.random().toString(36).slice(2,8),todayS=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
+const ago=d=>{if(!d)return'';const n=Math.floor((new Date(new Date().toDateString())-new Date(d+'T00:00'))/864e5);return n<=0?'Hôm nay':n===1?'Hôm qua':n<7?n+' ngày trước':fmt(d)};
+const ex=t=>{const s=String(t||'').replace(/\s+/g,' ').trim();return s.length>150?s.slice(0,150)+'…':s};
+const chip=s=>{const x=ST[s]||ST.doing;return `<span class="chip ${x[1]}">${x[0]}</span>`};
+const tags=s=>(s.tags||[]).map(t=>`<span class="chip">${esc(t)}</span>`).join('');
+const cover=(s,c)=>{const k=COL[(s.c||0)%6];return `<div class="cv ${c||''}" style="--a:${k[0]};--b:${k[1]};--f:${k[2]}${s.img?`;background-image:url('${esc(s.img)}');background-size:cover`:''}">${s.img?'':`<i>${esc(s.zh||'书')}</i>`}</div>`};
+const prog=s=>{const n=s.chapters.length;return s.total>0?`<div class="pg"><i style="width:${Math.min(100,n/s.total*100)}%"></i></div><small>${n}/${s.total} chương</small>`:`<small>${n} chương</small>`};
+const sc=s=>`<a class="sc" href="#s/${s.id}">${cover(s)}<div><b class="t">${esc(s.title)}</b><div>${chip(s.status)}${tags(s)}</div>${s.summary?`<p class="ex">${esc(ex(s.summary))}</p>`:''}${prog(s)}</div></a>`;
+const feed=()=>{const a=[];DB.stories.forEach(s=>s.chapters.forEach((c,i)=>a.push({s,c,i})));return a.sort((x,y)=>(y.c.date||'')>(x.c.date||'')?1:(y.c.date||'')<(x.c.date||'')?-1:y.i-x.i)};
+const posts=()=>DB.posts.slice().sort((a,b)=>(b.date||'')>(a.date||'')?1:-1);
+const sec=(t,l)=>`<div class="sec"><h2><span class="hl">${t}</span></h2>${l?`<a href="#${l}">Xem tất cả ›</a>`:''}</div>`;
+const nf=()=>`<div class="card"><h1>Không tìm thấy</h1><p class="sub">Trang này không tồn tại hoặc đã bị xóa.</p><a class="btn" href="#home">Về trang chủ</a></div>`;
+const avatar=()=>DB.site.avatar?`<img class="av" src="${esc(DB.site.avatar)}" alt="Ảnh đại diện" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'av',textContent:'🐝'}))">`:'<div class="av">🐝</div>';
+
+function side(){const S=DB.site,n=DB.stories.length,m=DB.stories.reduce((a,s)=>a+s.chapters.length,0);
+ return `<aside class="side"><div class="card pf tape">${avatar()}<h3>${esc(S.name||'PageBee')}</h3><div class="zh">${esc(S.tagline)}</div>
+ <p>${esc((S.bio[0]||'').replace('🍒','').trim())}</p><div class="stat"><span>${n} bộ</span><span>${m} chương</span></div>
+ <div class="btns more">${S.fb?`<a class="btn sm" href="${esc(S.fb)}" target="_blank" rel="noopener">Facebook</a>`:''}${S.mail?`<a class="btn w sm" href="mailto:${esc(S.mail)}">Gmail</a>`:''}</div>${S.since?`<p class="since more">🏡 Xây nhà ngày ${esc(S.since)}</p>`:''}</div></aside>`}
+function home(){const S=DB.site,st=DB.stories,doing=st.filter(s=>s.status==='doing'),done=st.filter(s=>s.status==='done'),ups=feed().slice(0,4),ps=posts().slice(0,1);
+ return `${S.notice.length?`<div class="note tape"><h2>📌 Lưu ý nhỏ trước khi vào nhà</h2>${S.notice.map(x=>`<p>🍒 ${esc(x)}</p>`).join('')}</div>`:''}
+ ${sec('Đang dịch 🍯','doing')}${doing.map(sc).join('')||'<div class="empty">Chưa có bộ nào đang dịch.</div>'}
+ ${sec('Chương mới nhất')}${ups.map(u=>`<a class="po" href="#s/${u.s.id}/${u.i+1}"><div class="r">${chip(u.s.status)}<small>${ago(u.c.date)}</small></div><small>${esc(u.s.title)}</small><b>${esc(u.c.title)}</b><p>${esc(ex(u.c.text))}</p></a>`).join('')||'<div class="empty">Chưa có chương nào. Vào mục Quản lý để thêm chương đầu tiên nhé.</div>'}
+ ${ps.length?sec('Nhật ký gần đây','diary')+ps.map(p=>`<a class="po" href="#diary"><div class="r"><small>${fmt(p.date)}</small></div><b>${esc(p.title)}</b><p>${esc(ex(p.text))}</p></a>`).join(''):''}
+ ${done.length?sec('Đã hoàn 🐝','done')+done.map(sc).join(''):''}`}
+function stories(k){const q=ui.q.toLowerCase(),dn=k==='done',L=DB.stories.filter(s=>(dn?s.status==='done':s.status!=='done')&&(s.title+' '+(s.author||'')+' '+(s.tags||[]).join(' ')).toLowerCase().includes(q));
+ return `<h1>${dn?'Truyện đã hoàn thành':'Truyện đang dịch'}</h1><p class="sub">${dn?'Những bộ đã dịch xong, đọc thoải mái không lo hụt hơi.':'Những bộ mình đang dịch, kể cả bộ đang tạm nghỉ. Mình lấp hố hơi chậm nên bạn cân nhắc trước khi nhảy hố nha.'}</p><div class="fl"><input id="sq" type="text" placeholder="Tìm theo tên, tác giả, thể loại…" value="${esc(ui.q)}" aria-label="Tìm truyện"></div>${L.map(sc).join('')||'<div class="empty">Chưa có bộ nào ở mục này.</div>'}`}
+function diary(){return `<h1>Nhật ký</h1><p class="sub">Thông báo, tâm sự và chuyện linh tinh của dịch giả.</p><div class="dr">${posts().map(p=>`<div class="po"><small>${fmt(p.date)}</small><b>${esc(p.title)}</b>${esc(p.text).split('\n').filter(x=>x.trim()).map(x=>`<p>${x}</p>`).join('')}</div>`).join('')||'<div class="empty">Chưa có bài nhật ký nào.</div>'}</div>`}
+function about(){const S=DB.site;return `<div class="card about tape" style="padding-top:28px"><h1>Đôi điều về mình</h1><ul>${S.bio.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>
+ <p style="margin:18px 0 8px"><b>Hãy liên hệ mình qua các kênh sau đây:</b></p><div class="btns">${S.fb?`<a class="btn" href="${esc(S.fb)}" target="_blank" rel="noopener">✏ Facebook</a>`:''}${S.mail?`<a class="btn w" href="mailto:${esc(S.mail)}">✏ ${esc(S.mail)}</a>`:''}</div><p style="margin:16px 0 0">💞 ${esc(S.thanks)} 💞</p></div>`}
+function story(id){const s=find(id);if(!s)return nf();const n=s.chapters.length,p=PROG[id],ch=s.chapters.map((c,i)=>({c,i}));if(ui.rev)ch.reverse();
+ return `<p class="back"><a href="#${s.status==='done'?'done':'doing'}">‹ ${s.status==='done'?'Truyện đã hoàn thành':'Truyện đang dịch'}</a></p><div class="card sh">${cover(s,'big')}<div><h1>${esc(s.title)}</h1><div>${chip(s.status)}${tags(s)}</div>${s.author?`<p style="margin:4px 0"><small>Tác giả: ${esc(s.author)}</small></p>`:''}${prog(s)}
+ ${n?`<div class="btns" style="margin-top:14px">${p&&p<=n?`<a class="btn" href="#s/${id}/${p}">Đọc tiếp chương ${p}</a><a class="btn w" href="#s/${id}/1">Từ đầu</a>`:`<a class="btn" href="#s/${id}/1">Đọc từ đầu</a>`}<a class="btn w" href="#s/${id}/${n}">Chương mới nhất</a></div>`:''}</div></div>
+ <div class="card"><h2 style="margin-bottom:8px"><span class="hl">Giới thiệu</span></h2>${s.summary?esc(s.summary).replace(/\n/g,'<br>'):'<small>Chưa có phần giới thiệu.</small>'}</div>
+ <div class="card"><div class="sec" style="margin:0 0 6px"><h2><span class="hl">Mục lục</span></h2><button class="btn w sm" data-a="rev">${ui.rev?'Cũ nhất trước':'Mới nhất trước'}</button></div>${ch.map(({c,i})=>`<a class="cr ${p&&i+1<p?'rd':''}" href="#s/${id}/${i+1}"><b>${i+1}</b><span>${esc(c.title)}</span><small>${ago(c.date)}</small></a>`).join('')||'<div class="empty">Truyện này chưa có chương nào.</div>'}</div>`}
+function read(id,n){const s=find(id),c=s&&s.chapters[n-1];if(!c)return nf();const len=s.chapters.length;PROG[id]=n;sv('pb.prog',PROG);
+ return `<div class="rprog"></div><div class="rbar"><div class="in"><a class="rb" href="#s/${id}" aria-label="Về trang truyện">‹</a><div class="ti">${esc(c.title)}<br><small style="font-weight:400;color:inherit;opacity:.6">${esc(s.title)}</small></div><button class="rb" data-a="toc" aria-label="Mục lục">☰</button><button class="rb ${ui.pop?'on':''}" data-a="pop" aria-label="Cài đặt đọc">Aa</button></div></div>
+ <div class="pop ${ui.pop?'open':''}"><h3>Cỡ chữ</h3><div class="rw"><button class="rb" data-a="fs" data-id="-1">A−</button><b>${PREF.fs}</b><button class="rb" data-a="fs" data-id="1">A+</button></div>
+ <h3>Giãn dòng</h3><div class="rw">${[1.7,1.95,2.25].map(v=>`<button class="rb ${PREF.lh===v?'on':''}" data-a="lh" data-id="${v}">${v===1.7?'Chặt':v===1.95?'Vừa':'Thoáng'}</button>`).join('')}</div>
+ <h3>Màu nền</h3><div class="rw">${TH.map((t,i)=>`<button class="sw ${PREF.th===i?'on':''}" style="background:${t[0]}" data-a="th" data-id="${i}" aria-label="Nền ${i+1}"></button>`).join('')}</div></div>
+ <div class="ov ${ui.toc||ui.pop?'open':''}" data-a="ov"></div><div class="drw ${ui.toc?'open':''}"><h3>Mục lục</h3>${s.chapters.map((x,i)=>`<a href="#s/${id}/${i+1}" class="${i+1===n?'cur':''}">${esc(x.title)}</a>`).join('')}</div>
+ <article class="art"><h1>${esc(c.title)}</h1>${esc(c.text).split('\n').filter(x=>x.trim()).map(p=>`<p>${p}</p>`).join('')}
+ ${c.note?`<div class="dn"><b>💌 Lời nhắn của dịch giả</b>${esc(c.note).replace(/\n/g,'<br>')}</div>`:''}${DB.site.fb?`<p style="text-align:center;margin-top:28px"><a class="rb" href="${esc(DB.site.fb)}" target="_blank" rel="noopener">💬 Nhắn mình ở Facebook</a></p>`:''}</article>
+ <div class="rfoot"><a class="rb" ${n>1?`href="#s/${id}/${n-1}"`:'disabled'}>‹ Trước</a><small>${n}/${len}</small><a class="rb" ${n<len?`href="#s/${id}/${n+1}"`:'disabled'}>Sau ›</a></div>`}
+
+const F=(l,n,v,t,x)=>`<label>${l}</label>`+(t==='ta'?`<textarea name="${n}" ${x||''}>${esc(v)}</textarea>`:`<input type="${t||'text'}" name="${n}" value="${esc(v)}" ${x||''}>`);
+const BT=(a,b)=>`<div class="btns" style="margin-top:14px"><button class="btn">${a}</button>${b||''}</div>`;
+function admin(){const T=adm.tab,tabs=`<div class="tabs">${[['st','Truyện'],['po','Nhật ký'],['si','Trang web']].map(x=>`<button class="btn w sm ${T===x[0]?'on':''}" data-a="tab" data-id="${x[0]}">${x[1]}</button>`).join('')}</div>`;let body='';
+ if(T==='st'){const nw=adm.sid==='new',s=nw?{title:'',status:'doing',zh:'书',c:0,img:'',author:'',tags:[],total:0,summary:'',chapters:[]}:find(adm.sid),c=s&&!nw&&s.chapters.find(x=>x.id===adm.cid)||{title:'',text:'',note:''};
+  const sf=s?`<div class="card"><h2>${nw?'Truyện mới':'Thông tin truyện'}</h2><form data-f="story">${F('Tên truyện','title',s.title,0,'required')}<label>Trạng thái</label><select name="status">${Object.keys(ST).map(k=>`<option value="${k}" ${s.status===k?'selected':''}>${ST[k][0]}</option>`).join('')}</select>
+  ${F('Tác giả (không bắt buộc)','author',s.author)}${F('Thể loại, cách nhau bằng dấu phẩy','tags',(s.tags||[]).join(', '),0,'placeholder="Ngôn tình, Cổ đại"')}${F('Tổng số chương của bản gốc (để hiện thanh tiến độ, bỏ trống nếu chưa biết)','total',s.total||'',0,'inputmode="numeric"')}
+  ${F('Chữ Hán trang trí trên bìa (1 chữ)','zh',s.zh,0,'maxlength="2"')}${F('Link ảnh bìa (không bắt buộc, có ảnh thì không hiện chữ Hán)','img',s.img)}<label>Màu bìa</label><input type="hidden" name="c" value="${s.c||0}"><div class="swr">${COL.map((x,i)=>`<button type="button" class="sw ${(s.c||0)===i?'on':''}" style="background:${x[0]}" data-a="col" data-id="${i}" aria-label="Màu ${i+1}"></button>`).join('')}</div>
+  ${F('Giới thiệu','summary',s.summary,'ta')}${BT('Lưu truyện',nw?'':'<button type="button" class="btn w" data-a="dels">Xóa truyện</button>')}</form></div>`:'<div class="card"><p class="empty">Chọn một truyện ở bên trái hoặc bấm “Truyện mới”.</p></div>';
+  const ch=s&&!nw?`<div class="card"><h2>Các chương (${s.chapters.length})</h2>${s.chapters.map(x=>`<div class="crow"><span>${esc(x.title)}</span><button class="btn w sm" data-a="ec" data-id="${x.id}">Sửa</button><button class="btn w sm" data-a="dc" data-id="${x.id}">Xóa</button></div>`).join('')||'<div class="empty">Chưa có chương.</div>'}
+  <form data-f="chap" style="margin-top:16px"><h2>${adm.cid?'Sửa chương':'Thêm chương mới'}</h2>${F('Tên chương','title',c.title,0,'required placeholder="Chương 1: …"')}${F('Nội dung (xuống dòng để tách đoạn)','text',c.text,'ta','required style="min-height:260px"')}${F('Lời nhắn của dịch giả (không bắt buộc)','note',c.note||'','ta')}${BT(adm.cid?'Lưu chương':'Thêm chương',adm.cid?'<button type="button" class="btn w" data-a="nc">Hủy sửa</button>':'')}</form></div>`:'';
+  body=`<div class="adm"><aside class="card"><button class="btn" data-a="ns">+ Truyện mới</button>${DB.stories.map(x=>`<button class="li ${x.id===adm.sid?'on':''}" data-a="ps" data-id="${x.id}">${esc(x.title)}</button>`).join('')}</aside><section>${sf}${ch}</section></div>`}
+ else if(T==='po'){const p=DB.posts.find(x=>x.id===adm.pid)||{title:'',date:todayS(),text:''};
+  body=`<div class="card"><h2>Các bài nhật ký (${DB.posts.length})</h2>${posts().map(x=>`<div class="crow"><span>${fmt(x.date)} · ${esc(x.title)}</span><button class="btn w sm" data-a="ep" data-id="${x.id}">Sửa</button><button class="btn w sm" data-a="dp" data-id="${x.id}">Xóa</button></div>`).join('')||'<div class="empty">Chưa có bài nào.</div>'}</div>
+  <div class="card"><form data-f="post"><h2>${adm.pid?'Sửa bài':'Viết bài mới'}</h2>${F('Tiêu đề','title',p.title,0,'required')}${F('Ngày đăng','date',p.date,'date','required')}${F('Nội dung','text',p.text,'ta','required style="min-height:200px"')}${BT(adm.pid?'Lưu bài':'Đăng bài',adm.pid?'<button type="button" class="btn w" data-a="np">Hủy sửa</button>':'')}</form></div>`}
+ else{const S=DB.site;body=`<div class="card"><h2>Thông tin trang web</h2><form data-f="site">${F('Tên trang','name',S.name)}${F('Câu giới thiệu dưới tên (tiếng Trung hay tiếng Việt đều được)','tagline',S.tagline)}${F('Link ảnh đại diện','avatar',S.avatar)}${F('Link Facebook','fb',S.fb)}${F('Gmail','mail',S.mail)}${F('Ngày xây nhà (ví dụ 09/06/2025)','since',S.since)}${F('Lời chúc cuối trang Về mình','thanks',S.thanks)}
+  ${F('Đôi điều về mình (mỗi dòng một ý)','bio',S.bio.join('\n'),'ta','style="min-height:150px"')}${F('Ghi chú ghim ở trang chủ (mỗi dòng một ý, để trống thì ẩn)','notice',S.notice.join('\n'),'ta')}${BT('Lưu thông tin')}</form></div>`}
+ return `<h1>Quản lý</h1><p class="sub">Chỉnh sửa ở đây chỉ lưu trên máy của bạn. Xong thì bấm “Xuất truyen.js” bên dưới, rồi đưa file đó lên Netlify để mọi người thấy.</p>${tabs}${body}
+ <div class="card"><h2 style="margin-bottom:6px">Cập nhật web</h2><p class="sub" style="margin-bottom:12px">Tải file <b>truyen.js</b> về, chép đè vào thư mục web rồi kéo thả lại lên Netlify.</p><div class="btns"><button class="btn" data-a="exp">⬇ Xuất truyen.js</button><button class="btn w" data-a="rst">Bỏ bản nháp trên máy này</button></div></div>`}
+
+function theme(on){const b=document.body,t=TH[PREF.th];b.classList.toggle('rd',on);b.style.setProperty('--rb',on?t[0]:'');b.style.setProperty('--rt',on?t[1]:'');b.style.setProperty('--fs',PREF.fs+'px');b.style.setProperty('--lh',PREF.lh)}
+function go(sc){const p=decodeURIComponent(location.hash.slice(1)).split('/');let v,r='home',rd=false,full=false;
+ if(p[0]==='s'&&p[2]){v=read(p[1],+p[2]);r='';rd=true}else if(p[0]==='s'){v=story(p[1]);r=(find(p[1])||{}).status==='done'?'done':'doing'}else if(p[0]==='doing'||p[0]==='done'){v=stories(p[0]);r=p[0]}else if(p[0]==='diary'){v=diary();r='diary'}else if(p[0]==='about'){v=about();r='about'}
+ else if(p[0]==='admin'){v=admin();r='';full=true}else v=home();
+ theme(rd);$('app').innerHTML=rd||full?v:`<div class="lay">${side()}<div>${v}</div></div>`;document.querySelectorAll('.top nav a').forEach(a=>a.classList.toggle('on',a.dataset.r===r));
+ if(sc!==false)scrollTo(0,0);else if(rd)scrolled()}
+function scrolled(){const p=document.querySelector('.rprog');if(p){const h=document.documentElement;p.style.width=(h.scrollTop/((h.scrollHeight-h.clientHeight)||1)*100)+'%'}}
+addEventListener('scroll',scrolled,{passive:true});addEventListener('hashchange',()=>{ui.pop=ui.toc=false;ui.q='';go()});
+function toast(m){const t=document.createElement('div');t.className='toast';t.textContent=m;document.body.appendChild(t);setTimeout(()=>t.remove(),2600)}
+document.addEventListener('input',e=>{if(e.target.id==='sq'){ui.q=e.target.value;go(false);const i=$('sq');i.focus();i.setSelectionRange(i.value.length,i.value.length)}});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a,id=b.dataset.id,s=find(adm.sid),R=()=>go(false);
+ if(a==='pop'){ui.pop=!ui.pop;ui.toc=false;R()}else if(a==='toc'){ui.toc=!ui.toc;ui.pop=false;R()}else if(a==='ov'){ui.pop=ui.toc=false;R()}
+ else if(a==='fs'){PREF.fs=Math.min(32,Math.max(14,PREF.fs+ +id));sv('pb.pref',PREF);R()}else if(a==='lh'){PREF.lh=+id;sv('pb.pref',PREF);R()}else if(a==='th'){PREF.th=+id;sv('pb.pref',PREF);R()}
+ else if(a==='f'){ui.f=id;R()}else if(a==='rev'){ui.rev=!ui.rev;R()}
+ else if(a==='tab'){adm.tab=id;adm.cid=adm.pid=null;R()}
+ else if(a==='col'){const f=b.closest('form');f.elements.c.value=id;f.querySelectorAll('.sw').forEach(x=>x.classList.toggle('on',x===b))}
+ else if(a==='ns'){adm.sid='new';adm.cid=null;R()}else if(a==='ps'){adm.sid=id;adm.cid=null;R()}else if(a==='ec'){adm.cid=id;R()}else if(a==='nc'){adm.cid=null;R()}
+ else if(a==='ep'){adm.pid=id;R()}else if(a==='np'){adm.pid=null;R()}
+ else if(a==='dc'&&s&&confirm('Xóa chương này?')){s.chapters=s.chapters.filter(x=>x.id!==id);adm.cid=null;saveDB();R()}
+ else if(a==='dp'&&confirm('Xóa bài nhật ký này?')){DB.posts=DB.posts.filter(x=>x.id!==id);adm.pid=null;saveDB();R()}
+ else if(a==='dels'&&s&&confirm('Xóa cả truyện và tất cả chương?')){DB.stories=DB.stories.filter(x=>x.id!==s.id);adm.sid=null;saveDB();R()}
+ else if(a==='rst'&&confirm('Bỏ mọi chỉnh sửa chưa xuất trên máy này?')){try{localStorage.removeItem('pb.draft')}catch(x){}DB=base;adm={tab:'st',sid:null,cid:null,pid:null};R();toast('Đã quay về dữ liệu của web')}
+ else if(a==='exp'){const u=URL.createObjectURL(new Blob(['window.PB_DATA = '+JSON.stringify(DB,null,1)+';\n'],{type:'text/javascript'})),l=document.createElement('a');l.href=u;l.download='truyen.js';l.click();setTimeout(()=>URL.revokeObjectURL(u),1000);toast('Đã tải truyen.js')}});
+document.addEventListener('submit',e=>{const f=e.target.dataset.f;if(!f)return;e.preventDefault();const d=Object.fromEntries(new FormData(e.target)),s=find(adm.sid),lines=x=>x.split('\n').map(y=>y.trim()).filter(Boolean);
+ if(f==='story'){const v={title:d.title.trim(),status:d.status,author:d.author.trim(),tags:d.tags.split(',').map(x=>x.trim()).filter(Boolean),total:Math.max(0,parseInt(d.total)||0),zh:d.zh.trim()||'书',img:d.img.trim(),c:+d.c,summary:d.summary.trim()};if(!v.title)return;
+  if(adm.sid==='new'){const n={id:slug(v.title),...v,chapters:[]};DB.stories.push(n);adm.sid=n.id}else Object.assign(s,v);toast('Đã lưu truyện')}
+ else if(f==='chap'&&s){const v={title:d.title.trim(),text:d.text.trim(),note:d.note.trim()};if(adm.cid)Object.assign(s.chapters.find(x=>x.id===adm.cid),v);else s.chapters.push({id:uid(),...v,date:todayS()});adm.cid=null;toast('Đã lưu chương')}
+ else if(f==='post'){const v={title:d.title.trim(),date:d.date,text:d.text.trim()};if(adm.pid)Object.assign(DB.posts.find(x=>x.id===adm.pid),v);else DB.posts.push({id:uid(),...v});adm.pid=null;toast('Đã lưu bài')}
+ else if(f==='site'){Object.assign(DB.site,{name:d.name.trim(),tagline:d.tagline.trim(),avatar:d.avatar.trim(),fb:d.fb.trim(),mail:d.mail.trim(),since:d.since.trim(),thanks:d.thanks.trim(),bio:lines(d.bio),notice:lines(d.notice)});toast('Đã lưu thông tin')}
+ saveDB();go(false)});
+addEventListener('keydown',e=>{const p=location.hash.slice(1).split('/');if(p[0]!=='s'||!p[2]||/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName))return;const n=+p[2],s=find(p[1]);if(!s)return;
+ if(e.key==='ArrowLeft'&&n>1)location.hash='s/'+p[1]+'/'+(n-1);if(e.key==='ArrowRight'&&n<s.chapters.length)location.hash='s/'+p[1]+'/'+(n+1);if(e.key==='Escape'){ui.pop=ui.toc=false;go(false)}});
+go();
+</script>
+</body>
+</html>
